@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SuperSocket", "SuperSocket", "{428DFB62-CF16-443D-9C6E-C72A159FD539}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Simple", "Simple", "{7DE4EEB4-018A-4E67-BB68-102717DCE492}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleSocketServer", "SimpleSocketServer\SimpleSocketServer.csproj", "{7D4DBA63-DDB7-4977-98D0-8DAF008A750B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleSocketClient", "SimpleSocketClient\SimpleSocketClient.csproj", "{80C01FCF-EDA4-485A-A083-541EB7897D9D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SuperSocketProject", "SuperSocketProject", "{684C0974-C664-4348-9CC4-1295EE34FBD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatServer", "ChatServer\ChatServer.csproj", "{0BAF4061-836D-42D4-A9B0-18DB096098E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatClient", "ChatClient\ChatClient.csproj", "{2F183666-A2ED-4A0B-9E59-4A78EE163C46}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D4DBA63-DDB7-4977-98D0-8DAF008A750B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D4DBA63-DDB7-4977-98D0-8DAF008A750B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D4DBA63-DDB7-4977-98D0-8DAF008A750B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D4DBA63-DDB7-4977-98D0-8DAF008A750B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80C01FCF-EDA4-485A-A083-541EB7897D9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80C01FCF-EDA4-485A-A083-541EB7897D9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80C01FCF-EDA4-485A-A083-541EB7897D9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80C01FCF-EDA4-485A-A083-541EB7897D9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BAF4061-836D-42D4-A9B0-18DB096098E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BAF4061-836D-42D4-A9B0-18DB096098E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BAF4061-836D-42D4-A9B0-18DB096098E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BAF4061-836D-42D4-A9B0-18DB096098E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F183666-A2ED-4A0B-9E59-4A78EE163C46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F183666-A2ED-4A0B-9E59-4A78EE163C46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F183666-A2ED-4A0B-9E59-4A78EE163C46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F183666-A2ED-4A0B-9E59-4A78EE163C46}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7DE4EEB4-018A-4E67-BB68-102717DCE492} = {428DFB62-CF16-443D-9C6E-C72A159FD539}
+		{7D4DBA63-DDB7-4977-98D0-8DAF008A750B} = {7DE4EEB4-018A-4E67-BB68-102717DCE492}
+		{80C01FCF-EDA4-485A-A083-541EB7897D9D} = {7DE4EEB4-018A-4E67-BB68-102717DCE492}
+		{684C0974-C664-4348-9CC4-1295EE34FBD7} = {428DFB62-CF16-443D-9C6E-C72A159FD539}
+		{0BAF4061-836D-42D4-A9B0-18DB096098E1} = {684C0974-C664-4348-9CC4-1295EE34FBD7}
+		{2F183666-A2ED-4A0B-9E59-4A78EE163C46} = {684C0974-C664-4348-9CC4-1295EE34FBD7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6715181E-295F-4EDD-917A-6CAED81C1B43}
+	EndGlobalSection
+EndGlobal
