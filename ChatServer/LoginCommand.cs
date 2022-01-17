@@ -21,19 +21,16 @@ namespace ChatServer
         /// <exception cref="NotImplementedException"></exception>
         public async ValueTask ExecuteAsync(TelnetSession session, StringPackageInfo package)
         {
+            string userName = package.Parameters[0];
+            string userPass = package.Parameters[1];
+            session.UserName = userName;
+            //验证用户名密码
+            JsonResult jsonResult = new JsonResult()
             {
-                string userName = package.Parameters[0];
-                string userPass = package.Parameters[1];
-                session.UserName = userName;
-                //验证用户名密码
-                JsonResult jsonResult = new JsonResult()
-                {
-                    CType = CommandTypeEnum.LoginResult,
-                    Suc = true
-                };
-                session.SendMsg(jsonResult);
-                await Task.CompletedTask;
-            }
+                CType = CommandTypeEnum.LoginResult,
+                Suc = true
+            };
+            session.SendMsg(jsonResult);
             await Task.CompletedTask;
         }
     }

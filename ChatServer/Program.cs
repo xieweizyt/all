@@ -42,7 +42,7 @@ try
             //otptions.AddCommandAssembly();
         });
     }
-
+    hostBuilder.UseInProcSessionContainer();
 
     //3.Build一下得到配置好的主机
     IHost host = hostBuilder.Build();  

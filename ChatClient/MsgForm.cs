@@ -29,7 +29,7 @@ namespace ChatClient
             string msg = this.txtMsgContent.Text;
 
             Console.WriteLine($"登录：{Thread.CurrentThread.ManagedThreadId}");
-            string command = $"SENDMSG:{datetime},{touser},{fromuser},{msg}";
+            string command = $"SendMsgCommand:{datetime},{touser},{fromuser},{msg}";
             var comm = Encoding.UTF8.GetBytes($"{command}\r\n");
             ArraySegment<byte> buffer = new ArraySegment<byte>(comm);
             CustomTcpSessionCenter._AsyncTcpSession.Send(buffer);
